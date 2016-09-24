@@ -6,7 +6,7 @@ URL_list = []
 input_filename = 'filename.csv'
 output_filename = 'outputfile.csv'
 
-with open(input_file_name, 'rb') as csvfile:
+with open(input_filename, 'rb') as csvfile:
 	filepoint = csv.reader(csvfile, delimiter=',')
 	for row in filepoint:
 		URL_list.append(row[0])
