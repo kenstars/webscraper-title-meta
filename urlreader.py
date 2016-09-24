@@ -13,7 +13,7 @@ with open(input_file_name, 'rb') as csvfile:
 
 target = open(output_filename, 'w')
 
-target.write('URL, Title, Description')
+target.write('URL, Title, Meta Description')
 for URL in URL_list[1:]:
 	data = urllib2.urlopen(URL)
 	title = '-'
