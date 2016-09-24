@@ -29,6 +29,10 @@ for URL in URL_list[1:]:
 						meta_desc = re.findall(r'"([^"]*)"', meta_desc)[0].strip()
 			else:
 				break
+		if title == None:
+			title = '-'
+		if meta_desc == None or meta_desc == '':
+			meta_desc = '-'
 		target.write(URL+', '+title+', '+meta_desc)
 		target.write("\n")
 	except:
